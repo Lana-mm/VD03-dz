@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гарри Поттер и его друзья</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Светлый фон для страницы */
+        }
+        .header {
+            background-color: #9B1B30;
+            color: #FFFFFF;
+        }
+        .content {
+            background-color: #FFD700;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #5B3A29;
+            color: #FFFFFF;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header py-3">
+        <div class="container">
+            <h1 class="text-center">Гарри Поттер и его друзья</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Персонажи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Фильмы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Книги</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Основной контент -->
+    <div class="content">
+        <div class="container">
+            <!-- Секция 1: Слайдер -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Все трое1.jpeg" class="d-block w-100" alt="Все трое1.jpeg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Все трое2.jpg" class="d-block w-100" alt="Все трое2.jpg">
+                    </div>
+                    <div class="car
+ousel-item">
+                        <img src="Все трое3.jpg" class="d-block w-100" alt="Все трое3.jpg">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            </div>
+            <!-- Секция 2: Карточки -->
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Гарри.jpg" class="card-img-top" alt="Гарри Поттер">
+                        <div class="card-body">
+                            <h5 class="card-title">Гарри Поттер</h5>
+                            <p class="card-text">Самый знаменитый студент Хогвартса за последние сто лет. Первый волшебник, которому удалось противостоять смертельному проклятью «Авада Кедавра», благодаря чему он стал знаменитым и получил прозвище «Мальчик, Который Выжил». Героически сражался с лордом Волан-де-Мортом и его последователями Пожирателями смерти. Единственный, кому удалось остаться живым после шести поединков с Тёмным Лордом и кто, в конце концов, победил его. Обладатель специальной награды Хогвартса «За заслуги перед школой», полученной в 1993 году за спасение от чудовища Тайной комнаты — василиска.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Гермиона.jpg" class="card-img-top" alt="Гермиона Грейнджер">
+                        <div class="card-body">
+                            <h5 class="card-title">Гермиона Грейнджер</h5>
+                            <p class="card-text">"Невыносимая всезнайка" которая много раз спасала друзей в самых тяжелых ситуациях и всегда сохраняла хладнокровие для лучшего совета и решения.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Рон.jpg" class="card-img-top" alt="Рон Уизли">
+                        <div class="card-body">
+                            <h5 class="card-title">Рон Уизли</h5>
+                            <p class="card-text">Честный, открытый друг, поэтому быстро находит общий язык с Гарри и Гермионой. Недаром же он попал в Гриффиндор: именно за честность, отвагу и самопожертвование ради спасения друзей, на которые Рон способен.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Секция 3: Аккордеон -->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Информация о мире Гарри Поттера
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Волшебный мир Гарри Поттера — вымышленный мир, в котором происходит действие серии романов о юном волшебнике Гарри Поттере. Автор этого мира, как и серии книг — английская писательница Джоан Роулинг.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Список книг
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Гарри Поттер и философский камень (1997), Гарри Поттер и Тайная комната (1998), Гарри П
+оттер и узник Азкабана (1999), Гарри Поттер и Кубок огня (2000), Гарри Поттер и Орден Феникса (2003), Гарри Поттер и Принц-полукровка (2005), Гарри Поттер и Дары Смерти (2007).
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Информация о фильмах
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Гарри Поттер и философский камень (2001), Гарри Поттер и Тайная комната (2002), Гарри Поттер и узник Азкабана (2004), Гарри Поттер и Кубок огня (2005), Гарри Поттер и Орден Феникса (2007), Гарри Поттер и Принц-полукровка (2007), Гарри Поттер и Дары Смерти. Часть 1 (2010), Гарри Поттер и Дары Смерти. Часть 2 (2011).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 Гарри Поттер и его друзья</p>
+        </div>
+    </footer>
+
+    <!-- Скрипты Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
